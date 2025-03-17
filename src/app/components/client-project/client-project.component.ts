@@ -8,6 +8,7 @@ import {
 import { ClientService } from '../../services/client.service';
 import { APIResponseModel, Employee } from '../../model/role';
 import { Client } from '../../model/class/Client';
+import { Constant } from '../../constants/Constants';
 
 @Component({
   selector: 'app-client-project',
@@ -16,6 +17,7 @@ import { Client } from '../../model/class/Client';
   styleUrl: './client-project.component.css',
 })
 export class ClientProjectComponent implements OnInit {
+  constants = Constant;
   projectForm: FormGroup = new FormGroup({
     clientProjectId: new FormControl(0),
     projectName: new FormControl('', [

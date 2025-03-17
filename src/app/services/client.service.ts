@@ -5,6 +5,7 @@ import { Client } from '../model/class/Client';
 import { environment } from '../../environments/environment.development';
 import { APIResponseModel } from '../model/role';
 import { ClientProject } from '../model/class/ClientProject';
+import { Constant } from '../constants/Constants';
 
 @Injectable({
   providedIn: 'root',
@@ -14,7 +15,7 @@ export class ClientService {
 
   getAllClients(): Observable<APIResponseModel> {
     return this.http.get<APIResponseModel>(
-      environment.API_URL + 'GetAllClients'
+      environment.API_URL + Constant.API_METHOD.GET_ALL_CLIENT
     );
   }
 
@@ -33,7 +34,7 @@ export class ClientService {
 
   getAllEmployee(): Observable<APIResponseModel> {
     return this.http.get<APIResponseModel>(
-      environment.API_URL + 'GetAllEmployee'
+      environment.API_URL + Constant.API_METHOD.GET_ALL_EMP
     );
   }
 

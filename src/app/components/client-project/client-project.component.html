@@ -38,7 +38,7 @@
                 <div class="text-danger">
                   @if (projectForm.controls['projectName'].errors?.['required']) {
                       <span>
-                        this is required
+                        {{constants.VALIDATION_MESSAGE.REQUIRED}}
                       </span>
                   }
                   @if(projectForm.controls['projectName'].errors?.['minlength']){
