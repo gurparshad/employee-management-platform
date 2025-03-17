@@ -22,3 +22,16 @@ export interface Employee {
   empDesignation: string;
   role: string;
 }
+
+export interface Project {
+  empName: string;
+  empId: number;
+  empCode: string;
+  empEmailId: string;
+  empDesignation: string;
+  projectName: string;
+  startDate: string;
+  expectedEndDate: string;
+  clientName: string;
+  clientProjectId: number;
+}
