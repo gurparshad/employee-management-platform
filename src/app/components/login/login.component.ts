@@ -12,6 +12,7 @@ export class LoginComponent {
 
   onLogin() {
     // after user click login button this method runs.
+    localStorage.setItem('empUser', 'loggedIn');
     this.router.navigateByUrl('/client');
   }
 }
