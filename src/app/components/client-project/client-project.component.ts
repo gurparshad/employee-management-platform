@@ -11,10 +11,11 @@ import { Client } from '../../model/class/Client';
 import { Constant } from '../../constants/Constants';
 import { ClientProject } from '../../model/class/ClientProject';
 import { DatePipe } from '@angular/common';
+import { AlertComponent } from '../../reusableComponents/alert/alert.component';
 
 @Component({
   selector: 'app-client-project',
-  imports: [ReactiveFormsModule, DatePipe],
+  imports: [ReactiveFormsModule, DatePipe, AlertComponent],
   templateUrl: './client-project.component.html',
   styleUrl: './client-project.component.css',
 })
